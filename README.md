@@ -31,6 +31,10 @@ Defina uma condição de parada para que sejam informados dados de tantos alunos
  * @author (Lucas Taborda) 
  * @version (18/09)
  */
+ 
+ 
+ 
+ 
 import java.util.Scanner;
 public class trabalhooo
              {   public static void main(String args[]){ 
@@ -55,7 +59,7 @@ public class trabalhooo
                                    grupo=teclado.nextInt();   
                                    }while(grupo<0); 
                                    
-       do{  System.out.println("Tempo de uso em minutos :  ");
+       do{  System.out.print("Tempo de uso em minutos :  ");
                                    tempodeuso=teclado.nextInt();    
                                 } while (tempodeuso<0);        
              
