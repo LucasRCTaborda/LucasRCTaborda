@@ -1,0 +1,53 @@
+/**
+ * Escreva uma descrição da classe EX26 aqui.
+ * Em uma eleição presidencial existem quatro candidatos. Os votos são
+informados através de códigos. Os dados utilizados para a contagem dos
+votos obedecem a seguinte codificação:
+• 1,2,3,4 = voto para os respectivos candidatos;
+• 0 = voto branco;
+• qualquer valor diferente de 0 a 4 = voto nulo;
+Elabore um programa que leia o código do candidado em um voto. Calcule
+e escreva:
+3
+• total de votos para cada candidato;
+• total de votos nulos;
+• total de votos em branco;
+Como finalizador do conjunto de votos, utilize valores negativos.
+ * @author (seu nome) 
+ * @version (um número da versão ou uma data)
+ */
+import java.util.Scanner;
+public class EX26{
+    public static void main (String args[]){
+        Scanner teclado=new Scanner(System.in);
+        int n,n1=0,n2=0,n3=0,n4=0,branco=0,nulo=0;
+         System.out.printf      ("\fVote Para presidente");
+         System.out.println    ("                         ");
+         System.out.println   ("Vole 13 para Lula presidente");
+         System.out.println   ("vote 22 para Bolsonaro presidente");
+         System.out.println   ("vote 12 Ciro presidente");
+         System.out.println   ("vote 30 D'Avila presidente");
+         System.out.println   ("voto 0 é nulo presidente");
+         System.out.println   ("Qualquer outro valor o voto será em branco");
+         System.out.println("        ____________");
+         
+         
+        do{
+                 n=teclado.nextInt();
+              
+               if(n==13)n1++;
+                 if(n==22)n2++;
+              if(n==12)n3++;
+                 if(n==30)n4++;
+                if(n==0)nulo++;
+              if(n!=0 && n!=12 &&  n!=22 && n!=13 && n!=30) branco++; 
+         
+          
+         System.out.println("Vole 13 para Lula presidente         : "+n1 );
+         System.out.println("vote 22 para Bolsonaro presidente    : "+n2 );
+         System.out.println("vote 12 Ciro presidente              : "+n3 );
+         System.out.println("vote 30 D'Avila presidente           : "+n4 );
+         System.out.println("voto 0 é nulo presidente             : "+nulo );
+         System.out.println("Qualquer valor o voto será em branco : "+branco );
+         
+         System.out.println("---------  ");System.out.println(" Caso queira finalizar digite um valor Negativo " );
