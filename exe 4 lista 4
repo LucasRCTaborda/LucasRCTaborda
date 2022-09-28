@@ -1,0 +1,38 @@
+
+/**
+ * .Crie um programa que lê o tempo atual em hora, minuto e segundo, e o
+escreve em segundos quanto tempo se passou desde que o dia começou.
+Essa conversão deve ser calculada por um método.
+ * 
+ * @author (seu nome) 
+ * @version (um número da versão ou uma data)
+ */
+ import java.util.Scanner;
+public class exe4
+
+{
+    public static void main(String args[]){
+    Scanner in = new Scanner(System.in);
+    double num1,num2,num3,resultado;
+    System.out.println(" \f escreva o tempo atual em hora, minuto e segundo!!!!!");
+    do{System.out.println("----------Horas ? ");
+    num1=in.nextDouble();}while(num1<0 && num1>23);
+    do{System.out.println("----------Minutos ? ");
+    num2=in.nextDouble();}while(num2<0 && num2>59);
+    do{System.out.println("----------segundos ? ");
+    num3=in.nextDouble();}while(num3<0 && num3>59);
+
+    System.out.println("Total em segundos " + maior(num1,num2,num3));
+}
+
+public static double maior(double v1, double v2, double v3 ){
+    double total,h,m;
+    
+    h=(v1*3600);
+    m=(v2*60);
+    total=(h+m+v3);
+    
+    return total;
+}
+
+}
