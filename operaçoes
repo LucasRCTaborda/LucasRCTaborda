@@ -1,0 +1,34 @@
+public class operaçoes{
+public static int somatorio (int n){
+    int s=0;
+    for(int  v=1; v<=n; v++){
+    s=s+v;
+    }
+    return s;  
+
+    
+}
+    public static void escrevedivisores  (int n){
+   for(int  d=1; d<=n; d++){
+        if(n%d==0) System.out.println(d); 
+    }
+    return ; 
+}
+ public static String geradivisores  (int n){
+    String msg= "" ;
+   for(int  d=1; d<=n; d++){
+        if(n%d==0) msg = msg + d  + "é divisor de " +n + "\n";
+        
+    }
+    return msg; 
+}
+
+public static int contadivisores  (int n){
+   int cont = 0;
+   for(int  d=1; d<=n; d++){
+        if(n%d==0) cont++;
+    
+    }
+    return cont; 
+}
+  }
